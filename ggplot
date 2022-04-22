@@ -1,0 +1,25 @@
+library(raster)
+library(RStoolbox)
+install.packages("ggplot2")
+library(ggplot2)
+install.packages("patchwork")
+library(patchwork)
+
+setwd("C:/Users/xave9/Desktop/Università/Magistrale/Corsi/Telerilevamento geo-ecologico/lab")
+l92 <- brick("defor1_.jpg")
+plotRGB(l92, 1, 2, 3, stretch="lin")
+
+l06 <- brick("defor2_.jpg")
+
+par(mfrow=c(2,1))
+plotRGB(l92, 1, 2, 3, stretch="lin")
+plotRGB(l06, 1, 2, 3, stretch="lin")
+
+p1 <-ggRGB(l92, 1, 2, 3, stretch="lin")
+p2 <-ggRGB(l06, 1, 2, 3, stretch="lin")
+p1 + p2
+p1/p2
+
+#classification
+l92c <- unsuperClass(l92, nClasses=2)
+l92c
