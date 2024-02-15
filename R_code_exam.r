@@ -5,7 +5,7 @@
 #Data from: https://earthobservatory.nasa.gov/images/149775/losing-a-long-watched-glacier
 #Project key points:
 # 1.principal components analysis calculation (pca) 
-# 2.loss of ice mass in 22 years
+# 2.variability of vegetation and the espansion of the lake of Alqueva Dam
 # 3.standard deviation calculation to show area with highest heterogeneity
 
 #first things first
@@ -22,7 +22,7 @@ library(patchwork) #combine separate ggplots into the same graphic
 install.packages("viridis")
 library(viridis)   #color scales
 
-#import the images of the Peyto Glacier from 1999 and 2021 
+#import the images of the area of Alqueva Dam in Portogallo
 
 P1999 <- brick("peyto_etm_1999236_lrg.jpg")
 P1999
