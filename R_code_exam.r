@@ -1,6 +1,6 @@
 #Hello! this is the script for my R project
-#we are going to see how the Peyto Glacier (Canada) changed from 1999 to 2021
-#and how much ice mass is lost
+#we are going to see how the area around of Alqueva Dam changed from 1999 to 2021
+#and the volume of water stored after the construction of the dam
 
 #Data from: https://earthobservatory.nasa.gov/images/149775/losing-a-long-watched-glacier
 #Project key points:
