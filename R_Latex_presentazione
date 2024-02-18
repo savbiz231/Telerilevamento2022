@@ -1,1 +1,240 @@
+\documentclass{beamer}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[T1]{fontenc}
 
+\usetheme{Frankfurt}
+\usecolortheme{orchid}
+
+\title{Esame Telerilevamento Geo-ecologico}
+\institute{Alma Mater Studiorum - Università di Bologna\\Telerilevamento Geo-ecologico}
+\author{Studente: Saverio Bizzarri}
+\date{A.A. 2021/22}
+
+\begin{document}
+
+\maketitle
+
+\AtBeginSection[]
+{
+  \begin{frame}
+  \frametitle{Indice}
+  \tableofcontents[currentsection, currentsubsection]
+  \end{frame}
+}
+\AtBeginSubsection[] {
+  \begin{frame}
+  \frametitle{Indice} 
+  \tableofcontents[currentsubsection]  
+  \end{frame}
+}
+
+
+\section{Obiettivi}
+
+\begin{frame}{Obiettivo del progetto}
+\begin{itemize}
+\item  Osservare il cambiamento del paesaggio e dei valori di NDVI in funzione alla costruzione della diga di Alqueva, in Portogallo, avvenuta nel 2002
+\end{itemize}
+\end{frame}
+
+\section{Inquadramento}
+
+\begin{frame}{Inquadramento geografico}
+    \includegraphics[width=1\textwidth]{Areadistudio.jpg}
+\begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{Areadistudio.jpg}
+        \caption{Enter Caption}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\begin{itemize}
+    \item Immagine area di studio. Fonte: Google Earth.
+\end{itemize}
+\end{frame}
+
+
+\section{Metodi}
+
+\begin{frame}{Metodi di analisi}
+\begin{itemize}
+    \item Importazione delle immagini Landsat 7 ETM+ e 8 OLI in Natural Colors (Bands: 4,3,2)
+    
+    \bigskip
+    
+    \item Produzione di mappe NDVI 
+    
+    \bigskip
+    
+    \item Calcolo differenza NDVI nelle immagini prodotte
+    
+    \bigskip
+
+\end{itemize}    
+\end{frame}
+
+\section{Analisi immagini}
+
+\begin{frame}{Portale USGS}
+\begin{figure}
+            \centering
+            \includegraphics[width=1\linewidth]{dn.PNG}
+            \label{fig:enter-label}
+        \end{figure}
+        \label{fig:enter-label}
+\end{frame}
+
+\begin{frame}{Diga di Alqueva: RGB 1999}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{RGB_1999.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{Diga di Alqueva: RGB 2002}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{RGB_2002.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{Diga di Alqueva: RGB 2013}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{RGB_2013.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{Diga di Alqueva: RGB 2018}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{RGB_2018.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{Diga di Alqueva: RGB 2022}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{RGB_2022.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{Confronto RGB [1999-2022]}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{RGB_tot.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\section{NDVI}
+
+\begin{frame}{Che cos'è NDVI}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{ubub.PNG}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+\begin{frame}{NDVI 1999}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{NDVI_1999.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{NDVI 2002}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{NDVI_2002.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{NDVI 2013}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{NDVI_2013.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{NDVI 2018}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{NDVI_2018.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{NDVI 2022}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{NDVI_2022.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\begin{frame}{Confronto NDVI}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{NDVI_tot.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\section{Calcolo della differenza tra NDVI}
+
+\begin{frame}{Differenza tra NDVI}
+\begin{figure}
+            \centering
+            \includegraphics[width=1\linewidth]{bdbdb.PNG}
+            \label{fig:enter-label}
+        \end{figure}
+        \label{fig:enter-label}
+\end{frame}
+
+\begin{frame}{Differenza tra NDVI}
+\begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{NDVI_difference_tot.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+\end{frame}
+
+\section{Conclusioni}
+
+\begin{frame}
+\begin{itemize}
+    \item La costruzione della diga di Alqueva nel 2002 ha certamente alterato l'ambiente ed aumentando le risorse idriche presenti nell'area. Le immagini NDVI prodotte nei differenti anni ed il calcolo della variazione di esso nei 4 intervalli mettono in evidenza tale cambiamento.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+    \item Grazie dell'attenzione.
+\end{itemize}
+\end{frame}
+
+\end{document}
