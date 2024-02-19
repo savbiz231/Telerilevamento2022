@@ -42,16 +42,6 @@
 
 \begin{frame}{Inquadramento geografico}
     \includegraphics[width=1\textwidth]{Areadistudio.jpg}
-\begin{figure}
-        \centering
-        \includegraphics[width=0.5\linewidth]{Areadistudio.jpg}
-        \caption{Enter Caption}
-        \label{fig:enter-label}
-    \end{figure}
-    \centering
-\begin{itemize}
-    \item Immagine area di studio. Fonte: Google Earth.
-\end{itemize}
 \end{frame}
 
 
@@ -232,6 +222,12 @@
 \end{frame}
 
 \begin{frame}
+\begin{itemize}
+    \item Grazie dell'attenzione.
+\end{itemize}
+\end{frame}
+
+\end{document}
 \begin{itemize}
     \item Grazie dell'attenzione.
 \end{itemize}
