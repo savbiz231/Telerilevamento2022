@@ -41,7 +41,7 @@ near.infrared_1999 = raster("LE07_L2SP_203033_19990818_20211204_02_T1_SR_B4.TIF"
 ndvi_1999= (near.infrared_1999 - red_1999) / (near.infrared_1999 + red_1999)
 ndvi_cropped_1999= crop(ndvi_1999, boundary_1999)
 colors = colorRampPalette(c("red3", "white", "darkcyan"))(255)
-plot(ndvi_cropped_1999, zlim=c(0, 0.6), col=colors, main="NDVI_1999")
+plot(ndvi_cropped_1999, zlim=c(-0.5, 1), col=colors, main="NDVI_1999")
 
 
 #2. Landsat7_2002: Natural color
@@ -67,7 +67,7 @@ near.infrared_2002 = raster("LE07_L2SP_203033_20020725_20211129_02_T1_SR_B4.TIF"
 ndvi_2002 = (near.infrared_2002 - red_2002) / (near.infrared_2002 + red_2002)
 ndvi_cropped_2002 = crop(ndvi_2002, boundary_2002)
 colors = colorRampPalette(c("red3", "white", "darkcyan"))(255)
-plot(ndvi_cropped_2002, zlim=c(0, 0.6), col=colors, main="NDVI_2002")
+plot(ndvi_cropped_2002, zlim=c(-0.5, 1), col=colors, main="NDVI_2002")
 
 #3. Landsat8_2013: Natural color
 setwd("C:/Users/xave9/Desktop/FilePC/Università/Lauree/Magistrale/Primo anno/Corsi/Telerilevamento geo-ecologico/Esame/immagini_landsat/2013")
@@ -93,7 +93,7 @@ near.infrared_2013 = raster("LC08_L2SP_203033_20130512_20200912_02_T1_SR_B5.TIF"
 ndvi_2013 = (near.infrared_2013 - red_2013) / (near.infrared_2013 + red_2013)
 ndvi_cropped_2013 = crop(ndvi_2013, boundary_2013)
 colors = colorRampPalette(c("red3", "white", "darkcyan"))(255)
-plot(ndvi_cropped_2013, zlim=c(0, 0.6), col=colors, main="NDVI_2013")
+plot(ndvi_cropped_2013, zlim=c(-0.5, 1), col=colors, main="NDVI_2013")
 
 #4. Landsat8_2018: Natural color
 setwd("C:/Users/xave9/Desktop/FilePC/Università/Lauree/Magistrale/Primo anno/Corsi/Telerilevamento geo-ecologico/Esame/immagini_landsat/2018")
@@ -119,7 +119,7 @@ near.infrared_2018 = raster("LC08_L2SP_203033_20180219_20200902_02_T1_SR_B5.TIF"
 ndvi_2018 = (near.infrared_2018 - red_2018) / (near.infrared_2018 + red_2018)
 ndvi_cropped_2018 = crop(ndvi_2018, boundary_2018)
 colors = colorRampPalette(c("red3", "white", "darkcyan"))(255)
-plot(ndvi_cropped_2018, zlim=c(0, 0.6), col=colors, main="NDVI_2018")
+plot(ndvi_cropped_2018, zlim=c(-0.5, 1), col=colors, main="NDVI_2018")
 
 #5. Landsat8_2022: Natural color
 setwd("C:/Users/xave9/Desktop/FilePC/Università/Lauree/Magistrale/Primo anno/Corsi/Telerilevamento geo-ecologico/Esame/immagini_landsat/2022")
@@ -144,7 +144,7 @@ near.infrared_2022 = raster("LC08_L2SP_203033_20221012_20221020_02_T1_SR_B5.TIF"
 ndvi_2022 = (near.infrared_2022 - red_2022) / (near.infrared_2022 + red_2022)
 ndvi_cropped_2022 = crop(ndvi_2022, boundary_2022)
 colors = colorRampPalette(c("red3", "white", "darkcyan"))(255)
-plot(ndvi_cropped_2022, zlim=c(0, 0.6), col=colors, main="NDVI_2022")
+plot(ndvi_cropped_2022, zlim=c(-0.5, 1), col=colors, main="NDVI_2022")
 
 #plots of all RGB images
 par(mfrow=c(2,3))
@@ -157,11 +157,11 @@ dev.off()
 
 #plots of all NDVI images
 par(mfrow=c(2,3))
-NDVI_land7_1999<-plot(ndvi_cropped_1999, zlim=c(0, 0.6), col=colors, main="NDVI_1999")
-NDVI_land7_2002<-plot(ndvi_cropped_2002, zlim=c(0, 0.6), col=colors, main="NDVI_2002")
-NDVI_land8_2013<-plot(ndvi_cropped_2013, zlim=c(0, 0.6), col=colors, main="NDVI_2013")
-NDVI_land8_2018<-plot(ndvi_cropped_2018, zlim=c(0, 0.6), col=colors, main="NDVI_2018")
-NDVI_land8_2022<-plot(ndvi_cropped_2022, zlim=c(0, 0.6), col=colors, main="NDVI_2022")
+NDVI_land7_1999<-plot(ndvi_cropped_1999, zlim=c(-0.5, 1), col=colors, main="NDVI_1999")
+NDVI_land7_2002<-plot(ndvi_cropped_2002, zlim=c(-0.5, 1), col=colors, main="NDVI_2002")
+NDVI_land8_2013<-plot(ndvi_cropped_2013, zlim=c(-0.5, 1), col=colors, main="NDVI_2013")
+NDVI_land8_2018<-plot(ndvi_cropped_2018, zlim=c(-0.5, 1), col=colors, main="NDVI_2018")
+NDVI_land8_2022<-plot(ndvi_cropped_2022, zlim=c(-0.5, 1), col=colors, main="NDVI_2022")
 dev.off()
 
 #Analysis the change of NDVI values (1999-2022)
