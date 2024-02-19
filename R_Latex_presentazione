@@ -53,6 +53,10 @@
     
     \bigskip
     
+    \item Produzione immagini Color Infrared (Bands: 5,4,3)
+    
+    \bigskip
+    
     \item Produzione di mappe NDVI 
     
     \bigskip
@@ -60,7 +64,7 @@
     \item Calcolo differenza NDVI nelle immagini prodotte
     
     \bigskip
-
+    
 \end{itemize}    
 \end{frame}
 
@@ -127,6 +131,21 @@
         \label{fig:enter-label}
     \end{figure}
     \centering
+\end{frame}
+
+\begin{frame}{Produzione immagini ColorInfrared [1999-2022]}
+\begin{itemize}
+    \item La visualizzazione "Color Infrared" consente di avere un'ulteriore caratteristica della zona: le piante fotosintetiche sane riflettono la luce infrarossa, quindi la vegetazione sana appare rossa, le aree nude o urbanizzate sono bianche, e le aree scure definiscono le risorse idriche.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Confronto ColorInfrared [1999-2022]}
+\begin{figure}
+            \centering
+            \includegraphics[width=1\linewidth]{ColorInfrared_tot.jpg}
+            \label{fig:enter-label}
+        \end{figure}
+        \label{fig:enter-label}
 \end{frame}
 
 \section{NDVI}
@@ -227,10 +246,39 @@
 \end{itemize}
 \end{frame}
 
-\end{document}
-\begin{itemize}
-    \item Grazie dell'attenzione.
-\end{itemize}
-\end{frame}
-
-\end{document}
+\end{document}\cite{}\begin{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{NDVI_tot.jpg}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{NDVI_2022.jpg}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{NDVI_2018.jpg}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{NDVI_2013.jpg}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{NDVI_2002.jpg}
+        \caption{Enter Caption}
+        \label{fig:enter-label}
+    \end{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{NDVI_1999.jpg}
+    \caption{Enter Caption}
+    \label{fig:enter-label}
+\end{figure}
